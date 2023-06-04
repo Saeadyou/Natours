@@ -74,8 +74,9 @@
         ),
         url(../../img/nat-5-small.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
-        (min-width: 125em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
             $color-secondary-light,
@@ -93,8 +94,9 @@
         ),
         url(../../img/nat-6-small.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
-        (min-width: 125em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
             $color-primary-light,
@@ -112,8 +114,9 @@
         ),
         url(../../img/nat-7-small.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
-        (min-width: 125em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
             $color-tertiary-light,
@@ -206,7 +209,9 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+         only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
